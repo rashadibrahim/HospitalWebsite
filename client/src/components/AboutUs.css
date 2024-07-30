@@ -1,0 +1,278 @@
+/* Set the root font size */
+.AboutUs-main {
+  font-size: 16px;
+}
+
+/* Set the background color for the page */
+.AboutUs-body {
+  background-image: url("../../public/AdobeStock_205829880.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* Style the main header */
+.AboutUs-header {
+  background-color: #cae8e8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  padding: 36;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  font-size: 42px;
+  font-weight: bold;
+  justify-content: space-between;
+}
+
+/* Style the navigation */
+.AboutUs-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.AboutUs-nav ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Change justify-content to flex-end */
+}
+
+.AboutUs-nav li {
+  display: inline-block;
+  margin-left: 100px;
+  /* Change margin-left to margin-right */
+}
+
+/* Add margin-right to the last li element to separate it from the logo */
+.AboutUs-nav li:last-child {
+  margin-right: 50px;
+}
+
+
+.AboutUs-nav a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.AboutUs-nav a:hover {
+  color: #0072c6;
+}
+
+/* Add animation to navigation links */
+.AboutUs-nav a {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.AboutUs-nav a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #0072c6;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.AboutUs-nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Style the main content area */
+.AboutUs-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.AboutUs-main h1 {
+  font-size: 36px;
+  margin-bottom: 40px;
+  /* Increased margin-bottom */
+  position: relative;
+  animation: fadeInUp 1s ease-in-out;
+  color: #333;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.AboutUs-main p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+  /* Increased margin-bottom */
+  position: relative;
+  animation: fadeInUp 1s ease-in-out;
+  color: #4b4b4b;
+}
+
+/* Style the button */
+.AboutUs-button {
+  background-color: #0072c6;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  font-size: 16px;
+}
+
+
+.AboutUs-button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #005ea2;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style the main image */
+.AboutUs-main img {
+  max-width: 100%;
+  margin-bottom: 40px;
+  /* Increased margin-bottom */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.AboutUs-main img:hover::after {
+  transform: scaleY(1);
+}
+
+.AboutUs-main img::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #005ea2;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Style the footer */
+.AboutUs-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.AboutUs-footer p {
+  margin: 0;
+}
+
+/* Style the links in the footer */
+.AboutUs-footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.AboutUs-footer a:hover {
+  color: #0072c6;
+}
+
+/* Add animation to components */
+.AboutUs-component {
+  background-color: #b2d9ea;
+  /* Baby blue color */
+  border: 1px solid #dddddd;
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  animation: pulse 1s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Add responsive design */
+@media screen and (max-width: 768px) {
+  .AboutUs-main {
+    padding: 20px;
+  }
+
+  .AboutUs-main h1 {
+    font-size: 24px;
+  }
+
+  .AboutUs-main p {
+    font-size: 16px;
+  }
+
+  .AboutUs-main img {
+    margin-bottom: 10px;
+  }
+
+  .AboutUs-logo img {
+    max-height: 50px;
+  }
+
+  .AboutUs-nav li {
+    margin-right: 100px;
+  }
+}

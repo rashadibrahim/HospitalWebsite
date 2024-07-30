@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+}
+
+.patients-Main {
+  background-color: aliceblue;
+  height: 600px;
+
+}
+
+.patients-Header {
+  background-color: #cae8e8;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 17px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.patients-Header a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.patients-Header a:hover {
+  color: #0072c6;
+}
+
+table {
+  width: 100%;
+  border: 1px solid;
+  border-collapse: collapse;
+  border: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+}
+
+th,
+td {
+
+  padding: 8px;
+}
+
+thead {
+  background-color: rgb(126, 125, 125);
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+.tableRow:hover {
+  background-color: lightblue;
+}
+
+.selBtn {
+  width: 60px;
+  height: 30px;
+  background-color: lightgrey;
+  border-radius: 18px;
+  border: 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.delBtn {
+  width: 60px;
+  height: 30px;
+  background-color: lightcoral;
+  border-radius: 18px;
+  border: 0;
+  margin-left: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.noData {
+  margin: 150px;
+  margin-left: 400px;
+  font-weight: bold;
+  font-size: 30px;
+  font-weight: bold;
+}

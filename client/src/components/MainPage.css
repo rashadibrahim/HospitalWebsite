@@ -1,0 +1,168 @@
+/* Set the root font size */
+.MainPage-main {
+  border: none;
+  font-size: 22px;
+}
+
+/* Set the background color for the page */
+.MainPage-body {
+  font-family: Arial, sans-serif;
+  background-image: url("../../public/AdobeStock_205829880.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Style the header */
+.MainPage-header {
+  background-color: #cbf1f9;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Style the navigation */
+
+.MainPage-nav li {
+  justify-content: space-between;
+  display: inline-block;
+  margin: 8px 200px;
+}
+
+.MainPage-nav {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.MainPage-nav li a {
+  color: #125e82;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: space-between;
+  transition: color 0.2s ease-in-out;
+}
+
+.MainPage-nav li a:hover {
+  color: #5395b6;
+}
+
+/* Style the main content area */
+.MainPage-main {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.MainPage-main h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.MainPage-main p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.MainPage-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.MainPage-btn {
+  border: none;
+  background-color: #0072c6;
+  color: #fbf8f8;
+  padding: 10px 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 0;
+  transition: background-color 0.2s ease-in-out;
+}
+.mainuser-button {
+    border: none;
+    background-color: #0072c6;
+    color: #fbf8f8;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 30px 0;
+    transition: background-color 0.2s ease-in-out;
+   
+  }
+  .mainuser-button1 {
+    border: none;
+    background-color: #0072c6;
+    color: #fbf8f8;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 50px ;
+    margin-bottom: 20px;
+    transition: background-color 0.2s ease-in-out;
+   
+
+
+  }
+
+  .mainuser-button2 {
+    border: none;
+    background-color: #0072c6;
+    color: #fbf8f8;
+    padding: 10px 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px ;
+    margin-bottom: 8px;
+    transition: background-color 0.2s ease-in-out;
+   
+
+  }
+  .mainuser-button2:hover{
+    background-color: #4c8da4;
+  }
+.mainuser-button:hover{
+  background-color: #990808;
+}
+.mainuser-button1:hover{
+  background-color: #4c8da4;
+}
+
+.MainPage-btn:hover {
+  background-color: #02375c;
+}
+
+.MainPage-admin {
+  background-color: #8d9ebb;
+}
+
+.MainPage-admin:hover {
+  background-color: #7b0202;
+}
+
+/* Style the footer */
+.MainPage-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 6px;
+  text-align: center;
+}
+
+.MainPage-footer a {
+  color: #fff;
+}
+
+
+.MainPage-footer a:hover {
+  text-decoration: underline;
+  color: #38708d;
+}

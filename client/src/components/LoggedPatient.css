@@ -1,0 +1,228 @@
+/* Set the root font size */
+.LoggedPatient-body {
+  font-size: 16px;
+}
+
+/* Set the background color for the page */
+.LoggedPatient-body {
+  background-image: url("../../public/AdobeStock_205829880.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+/* Style the main header */
+.LoggedPatient-header {
+  background-color: #afe0e0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  padding: 36;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+  font-size: 42px;
+  font-weight: bold;
+  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.un-LoggedPatient {
+  margin: 170px;
+}
+
+.LoggedPatient-header ul {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* Change justify-content to flex-end */
+}
+
+.LoggedPatient-header li {
+  display: inline-block;
+  margin-left: 100px;
+  /* Change margin-left to margin-right */
+}
+
+/* Add margin-right to the last li element to separate it from the logo */
+.LoggedPatient-header li:last-child {
+  margin-right: 50px;
+}
+
+.LoggedPatient-header a {
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.2s ease-in-out;
+}
+
+.LoggedPatient-header a:hover {
+  color: #0072c6;
+}
+
+/* Add animation to navigation links */
+.LoggedPatient-header a {
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+.LoggedPatient-header a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #c60000;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.LoggedPatient-header a:hover::after {
+  transform: scaleX(1);
+}
+
+/* Style the main content area */
+.LoggedPatient-main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  font-weight: bold;
+}
+
+
+.LoggedPatient-main h1 {
+  font-size: 40px;
+  margin-bottom: 40px;
+  /* Increased margin-bottom */
+  position: relative;
+  color: #333;
+}
+
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  font-size: 20px;
+  margin-bottom: 50px;
+  position: relative;
+  color: #333;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.label {
+  font-weight: bold;
+  width: 120px;
+}
+
+.value {
+  flex-grow: 1;
+  font-size: 18px;
+}
+
+
+/*style doctor response*/
+.LoggedPatient-main .DocRespons {
+  font-size: 27px;
+}
+
+/* Style the button */
+.LoggedPatient-main button {
+  background-color: #5babe4;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 100;
+}
+
+.LoggedPatient-main button:hover {
+  background-color: #005ea2;
+}
+
+.LoggedPatient-main button:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.LoggedPatient-main button:active:before {
+  width: 200%;
+  height: 200%;
+}
+
+.LoggedPatient-main button span {
+  position: relative;
+  z-index: 1;
+}
+
+
+
+
+
+
+
+/* Style the footer */
+.LoggedPatient-footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.LoggedPatient-footer p {
+  margin: 0;
+}
+
+
+
+/* Add responsive design */
+@media screen and (max-width: 768px) {
+  .LoggedPatient-main {
+    padding: 20px;
+  }
+
+  .LoggedPatient-main h1 {
+    font-size: 24px;
+  }
+
+  .LoggedPatient-main h2 {
+    font-size: 18px;
+  }
+
+  .LoggedPatient-header li {
+    margin-right: 100px;
+  }
+}

@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.contact-us-body {
+  background-color: #f5f5f5;
+  /* Add a background color to the body */
+}
+
+.contact-us-body {
+  background-image: url("../../public/AdobeStock_205829880.jpeg");
+}
+
+.contact-us-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 34px;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  background-color: #b2d9ea;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us-container h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+  position: relative;
+  color: #333;
+}
+
+.contact-us-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-us-container label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #4b4b4b;
+}
+
+.contact-us-container input,
+.contact-us-container textarea {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f7f7f7;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us-container input:focus,
+.contact-us-container textarea:focus {
+  outline: none;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-us-container button[type="submit"] {
+  background-color: #0072c6;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-us-container button[type="submit"]:hover {
+  background-color: #005ea2;
+}
+
+.contact-us-container button[type="submit"]:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-us-container button[type="submit"]:active:before {
+  width: 200%;
+  height: 200%;
+}
+
+.contact-us-container button[type="submit"] span {
+  position: relative;
+  z-index: 1;
+}
+
+.contact-info {
+  background-color: #b2d9ea;
+  border: 1px solid #dddddd;
+  padding: 14px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-info h3 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  position: relative;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  position: relative;
+  color: #4b4b4b;
+}
